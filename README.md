@@ -4,7 +4,7 @@
 [![Linux Build Status][cli-img]][cli-url]
 [![Windows Build Status][win-img]][win-url]
 
-[Convert Colors] converts colors between RGB, HSL, HWB, LAB, HSV, and XYZ.
+[Convert Colors] converts colors between RGB, HSL, HWB, Lab, LCH, HSV, and XYZ.
 
 ```js
 import convert from '@csstools/convert-colors';
