@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>rgb-hsl.js - Convert Colors</title>
+    
+    <meta name="description" content="A tool for transforming colors with JavaScript" />
+    
+    
+    
+    <meta property="og:title" content="Convert Colors"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://jonathantneal.github.io/node-logo.svg"/>
+    <meta property="og:site_name" content="Convert Colors"/>
+    <meta property="og:url" content="https://jonathantneal.github.io/convert-colors"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/jonathantneal/convert-colors" >GitHub</a></h2><h2><a href="https://gitter.im/postcss" >Support</a></h2><h3>Global</h3><ul><li><a href="global.html#hex2ciede">hex2ciede</a></li><li><a href="global.html#hex2contrast">hex2contrast</a></li><li><a href="global.html#hex2hsl">hex2hsl</a></li><li><a href="global.html#hex2hsv">hex2hsv</a></li><li><a href="global.html#hex2hwb">hex2hwb</a></li><li><a href="global.html#hex2lab">hex2lab</a></li><li><a href="global.html#hex2lch">hex2lch</a></li><li><a href="global.html#hex2rgb">hex2rgb</a></li><li><a href="global.html#hex2xyz">hex2xyz</a></li><li><a href="global.html#hsl2ciede">hsl2ciede</a></li><li><a href="global.html#hsl2contrast">hsl2contrast</a></li><li><a href="global.html#hsl2hex">hsl2hex</a></li><li><a href="global.html#hsl2hsv">hsl2hsv</a></li><li><a href="global.html#hsl2hwb">hsl2hwb</a></li><li><a href="global.html#hsl2lab">hsl2lab</a></li><li><a href="global.html#hsl2lch">hsl2lch</a></li><li><a href="global.html#hsl2rgb">hsl2rgb</a></li><li><a href="global.html#hsl2xyz">hsl2xyz</a></li><li><a href="global.html#hsv2ciede">hsv2ciede</a></li><li><a href="global.html#hsv2contrast">hsv2contrast</a></li><li><a href="global.html#hsv2hex">hsv2hex</a></li><li><a href="global.html#hsv2hsl">hsv2hsl</a></li><li><a href="global.html#hsv2hwb">hsv2hwb</a></li><li><a href="global.html#hsv2lab">hsv2lab</a></li><li><a href="global.html#hsv2lch">hsv2lch</a></li><li><a href="global.html#hsv2rgb">hsv2rgb</a></li><li><a href="global.html#hsv2xyz">hsv2xyz</a></li><li><a href="global.html#hwb2ciede">hwb2ciede</a></li><li><a href="global.html#hwb2contrast">hwb2contrast</a></li><li><a href="global.html#hwb2hex">hwb2hex</a></li><li><a href="global.html#hwb2hsl">hwb2hsl</a></li><li><a href="global.html#hwb2hsv">hwb2hsv</a></li><li><a href="global.html#hwb2lab">hwb2lab</a></li><li><a href="global.html#hwb2lch">hwb2lch</a></li><li><a href="global.html#hwb2rgb">hwb2rgb</a></li><li><a href="global.html#hwb2xyz">hwb2xyz</a></li><li><a href="global.html#keyword2ciede">keyword2ciede</a></li><li><a href="global.html#keyword2contrast">keyword2contrast</a></li><li><a href="global.html#keyword2hex">keyword2hex</a></li><li><a href="global.html#keyword2hsl">keyword2hsl</a></li><li><a href="global.html#keyword2hsv">keyword2hsv</a></li><li><a href="global.html#keyword2hwb">keyword2hwb</a></li><li><a href="global.html#keyword2lab">keyword2lab</a></li><li><a href="global.html#keyword2lch">keyword2lch</a></li><li><a href="global.html#keyword2rgb">keyword2rgb</a></li><li><a href="global.html#lab2ciede">lab2ciede</a></li><li><a href="global.html#lab2contrast">lab2contrast</a></li><li><a href="global.html#lab2hsl">lab2hsl</a></li><li><a href="global.html#lab2hsv">lab2hsv</a></li><li><a href="global.html#lab2hwb">lab2hwb</a></li><li><a href="global.html#lab2lch">lab2lch</a></li><li><a href="global.html#lab2rgb">lab2rgb</a></li><li><a href="global.html#lab2xyz">lab2xyz</a></li><li><a href="global.html#lch2ciede">lch2ciede</a></li><li><a href="global.html#lch2contrast">lch2contrast</a></li><li><a href="global.html#lch2hex">lch2hex</a></li><li><a href="global.html#lch2hsl">lch2hsl</a></li><li><a href="global.html#lch2hsv">lch2hsv</a></li><li><a href="global.html#lch2hwb">lch2hwb</a></li><li><a href="global.html#lch2lab">lch2lab</a></li><li><a href="global.html#lch2rgb">lch2rgb</a></li><li><a href="global.html#lch2xyz">lch2xyz</a></li><li><a href="global.html#rgb2ciede">rgb2ciede</a></li><li><a href="global.html#rgb2contrast">rgb2contrast</a></li><li><a href="global.html#rgb2hex">rgb2hex</a></li><li><a href="global.html#rgb2hsl">rgb2hsl</a></li><li><a href="global.html#rgb2hsv">rgb2hsv</a></li><li><a href="global.html#rgb2hwb">rgb2hwb</a></li><li><a href="global.html#rgb2lab">rgb2lab</a></li><li><a href="global.html#rgb2lch">rgb2lch</a></li><li><a href="global.html#rgb2xyz">rgb2xyz</a></li><li><a href="global.html#xyz2ciede">xyz2ciede</a></li><li><a href="global.html#xyz2contrast">xyz2contrast</a></li><li><a href="global.html#xyz2hex">xyz2hex</a></li><li><a href="global.html#xyz2hsl">xyz2hsl</a></li><li><a href="global.html#xyz2hsv">xyz2hsv</a></li><li><a href="global.html#xyz2hwb">xyz2hwb</a></li><li><a href="global.html#xyz2lab">xyz2lab</a></li><li><a href="global.html#xyz2lch">xyz2lch</a></li><li><a href="global.html#xyz2rgb">xyz2rgb</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">rgb-hsl.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { abs, rgb2hue, rgb2value, rgb2whiteness, hue2rgb } from './util';
+
+/**
+* @func rgb2hsl
+* @desc Return a HSL color from an RGB color
+* @param {Number} r - red (0 - 100)
+* @param {Number} g - green (0 - 100)
+* @param {Number} b - blue (0 - 100)
+* @param {Number=} f - Hue Fallback (0 - 360)
+* @return {ArrayHSL}
+* @example
+* rgb2hsl(0, 100, 100) // => [0, 100, 50]
+* @link https://www.w3.org/TR/css-color-3/#hsl-color
+* @link https://www.w3.org/TR/css-color-4/#hsl-to-rgb
+* @link https://www.rapidtables.com/convert/color/rgb-to-hsl.html
+* @link https://www.rapidtables.com/convert/color/hsl-to-rgb.html
+*/
+
+export function rgb2hsl(rgbR, rgbG, rgbB, fallbackhue) {
+	const hslH = rgb2hue(rgbR, rgbG, rgbB, fallbackhue);
+	const hslV = rgb2value(rgbR, rgbG, rgbB);
+	const hslW = rgb2whiteness(rgbR, rgbG, rgbB);
+
+	// calculate value/whiteness delta
+	const hslD = hslV - hslW;
+
+	// calculate lightness
+	const hslL = (hslV + hslW) / 2;
+
+	// calculate saturation
+	const hslS = hslD === 0 ? 0 : hslD / (100 - abs(2 * hslL - 100)) * 100;
+
+	return [ hslH, hslS, hslL ];
+}
+
+/**
+* @func hsl2rgb
+* @desc Return an RGB color from an HSL color
+* @param {Number} h - Hue Angle (0 - 360)
+* @param {Number} s - Saturation (0 - 100)
+* @param {Number} l - Lightness (0 - 100)
+* @return {ArrayRGB}
+* @example
+* hsl2rgb(0, 100, 50) // => [0, 100, 100]
+* @link https://www.w3.org/TR/css-color-3/#hsl-color
+* @link https://www.w3.org/TR/css-color-4/#hsl-to-rgb
+* @link https://www.rapidtables.com/convert/color/rgb-to-hsl.html
+* @link https://www.rapidtables.com/convert/color/hsl-to-rgb.html
+*/
+
+export function hsl2rgb(hslH, hslS, hslL) {
+	// calcuate t2
+	const t2 = hslL &lt;= 50 ? hslL * (hslS + 100) / 100 : hslL + hslS - hslL * hslS / 100;
+
+	// calcuate t1
+	const t1 = hslL * 2 - t2;
+
+	// calculate rgb
+	const [ rgbR, rgbG, rgbB ] = [
+		hue2rgb(t1, t2, hslH + 120),
+		hue2rgb(t1, t2, hslH),
+		hue2rgb(t1, t2, hslH - 120)
+	];
+
+	return [ rgbR, rgbG, rgbB ];
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+    <script src="scripts/custom.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    
+</body>
+</html>

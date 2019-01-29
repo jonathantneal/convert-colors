@@ -1,0 +1,94 @@
+:root {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font: 100%/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+nav ul ul a {
+	color: #666;
+}
+
+h4.name {
+	background-color: #24292e;
+}
+
+:not(h3) + h4.name {
+	margin-top: 3em;
+}
+
+/* Pretty Print
+/* ========================================================================== */
+
+.prettyprint, .prettyprint.source {
+	background-color: #f6f8fa;
+	border-radius: 3px;
+	border-style: none;
+	color: #24292e;
+}
+
+.prettyprint code {
+	background-color: transparent;
+	color: inherit;
+	font: 14px/1.5 SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	overflow: auto;
+	padding: 16px;
+}
+
+.com {
+	color: #6a737d;
+}
+
+.kwd {
+	color: #d73a49;
+}
+
+.pln {
+	color: purple;
+}
+
+.pun {
+	color: #24292e;
+}
+
+.str, .lit {
+	color: #080;
+}
+
+.typ {
+	color: #24292e;
+}
+
+.lang-bash * {
+	color: inherit;
+}
+
+/* ...
+/* ========================================================================== */
+
+.code-caption {
+	font-size: 90%;
+	font-style: normal;
+	margin: 1em 0 -.75em;
+}
+
+.details + h5 {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+div.param-desc + .param-type {
+	margin-left: 2.5em;
+	margin-top: -.75em;
+}
+
+div.param-desc + .param-type > * {
+	font-size: 80%;
+}
+
+.container-overview > h2 {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}

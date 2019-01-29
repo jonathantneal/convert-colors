@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>keyword-rgb.js - Convert Colors</title>
+    
+    <meta name="description" content="A tool for transforming colors with JavaScript" />
+    
+    
+    
+    <meta property="og:title" content="Convert Colors"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://jonathantneal.github.io/node-logo.svg"/>
+    <meta property="og:site_name" content="Convert Colors"/>
+    <meta property="og:url" content="https://jonathantneal.github.io/convert-colors"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/jonathantneal/convert-colors" >GitHub</a></h2><h2><a href="https://gitter.im/postcss" >Support</a></h2><h3>Global</h3><ul><li><a href="global.html#hex2ciede">hex2ciede</a></li><li><a href="global.html#hex2contrast">hex2contrast</a></li><li><a href="global.html#hex2hsl">hex2hsl</a></li><li><a href="global.html#hex2hsv">hex2hsv</a></li><li><a href="global.html#hex2hwb">hex2hwb</a></li><li><a href="global.html#hex2lab">hex2lab</a></li><li><a href="global.html#hex2lch">hex2lch</a></li><li><a href="global.html#hex2rgb">hex2rgb</a></li><li><a href="global.html#hex2xyz">hex2xyz</a></li><li><a href="global.html#hsl2ciede">hsl2ciede</a></li><li><a href="global.html#hsl2contrast">hsl2contrast</a></li><li><a href="global.html#hsl2hex">hsl2hex</a></li><li><a href="global.html#hsl2hsv">hsl2hsv</a></li><li><a href="global.html#hsl2hwb">hsl2hwb</a></li><li><a href="global.html#hsl2lab">hsl2lab</a></li><li><a href="global.html#hsl2lch">hsl2lch</a></li><li><a href="global.html#hsl2rgb">hsl2rgb</a></li><li><a href="global.html#hsl2xyz">hsl2xyz</a></li><li><a href="global.html#hsv2ciede">hsv2ciede</a></li><li><a href="global.html#hsv2contrast">hsv2contrast</a></li><li><a href="global.html#hsv2hex">hsv2hex</a></li><li><a href="global.html#hsv2hsl">hsv2hsl</a></li><li><a href="global.html#hsv2hwb">hsv2hwb</a></li><li><a href="global.html#hsv2lab">hsv2lab</a></li><li><a href="global.html#hsv2lch">hsv2lch</a></li><li><a href="global.html#hsv2rgb">hsv2rgb</a></li><li><a href="global.html#hsv2xyz">hsv2xyz</a></li><li><a href="global.html#hwb2ciede">hwb2ciede</a></li><li><a href="global.html#hwb2contrast">hwb2contrast</a></li><li><a href="global.html#hwb2hex">hwb2hex</a></li><li><a href="global.html#hwb2hsl">hwb2hsl</a></li><li><a href="global.html#hwb2hsv">hwb2hsv</a></li><li><a href="global.html#hwb2lab">hwb2lab</a></li><li><a href="global.html#hwb2lch">hwb2lch</a></li><li><a href="global.html#hwb2rgb">hwb2rgb</a></li><li><a href="global.html#hwb2xyz">hwb2xyz</a></li><li><a href="global.html#keyword2ciede">keyword2ciede</a></li><li><a href="global.html#keyword2contrast">keyword2contrast</a></li><li><a href="global.html#keyword2hex">keyword2hex</a></li><li><a href="global.html#keyword2hsl">keyword2hsl</a></li><li><a href="global.html#keyword2hsv">keyword2hsv</a></li><li><a href="global.html#keyword2hwb">keyword2hwb</a></li><li><a href="global.html#keyword2lab">keyword2lab</a></li><li><a href="global.html#keyword2lch">keyword2lch</a></li><li><a href="global.html#keyword2rgb">keyword2rgb</a></li><li><a href="global.html#lab2ciede">lab2ciede</a></li><li><a href="global.html#lab2contrast">lab2contrast</a></li><li><a href="global.html#lab2hsl">lab2hsl</a></li><li><a href="global.html#lab2hsv">lab2hsv</a></li><li><a href="global.html#lab2hwb">lab2hwb</a></li><li><a href="global.html#lab2lch">lab2lch</a></li><li><a href="global.html#lab2rgb">lab2rgb</a></li><li><a href="global.html#lab2xyz">lab2xyz</a></li><li><a href="global.html#lch2ciede">lch2ciede</a></li><li><a href="global.html#lch2contrast">lch2contrast</a></li><li><a href="global.html#lch2hex">lch2hex</a></li><li><a href="global.html#lch2hsl">lch2hsl</a></li><li><a href="global.html#lch2hsv">lch2hsv</a></li><li><a href="global.html#lch2hwb">lch2hwb</a></li><li><a href="global.html#lch2lab">lch2lab</a></li><li><a href="global.html#lch2rgb">lch2rgb</a></li><li><a href="global.html#lch2xyz">lch2xyz</a></li><li><a href="global.html#rgb2ciede">rgb2ciede</a></li><li><a href="global.html#rgb2contrast">rgb2contrast</a></li><li><a href="global.html#rgb2hex">rgb2hex</a></li><li><a href="global.html#rgb2hsl">rgb2hsl</a></li><li><a href="global.html#rgb2hsv">rgb2hsv</a></li><li><a href="global.html#rgb2hwb">rgb2hwb</a></li><li><a href="global.html#rgb2lab">rgb2lab</a></li><li><a href="global.html#rgb2lch">rgb2lch</a></li><li><a href="global.html#rgb2xyz">rgb2xyz</a></li><li><a href="global.html#xyz2ciede">xyz2ciede</a></li><li><a href="global.html#xyz2contrast">xyz2contrast</a></li><li><a href="global.html#xyz2hex">xyz2hex</a></li><li><a href="global.html#xyz2hsl">xyz2hsl</a></li><li><a href="global.html#xyz2hsv">xyz2hsv</a></li><li><a href="global.html#xyz2hwb">xyz2hwb</a></li><li><a href="global.html#xyz2lab">xyz2lab</a></li><li><a href="global.html#xyz2lch">xyz2lch</a></li><li><a href="global.html#xyz2rgb">xyz2rgb</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">keyword-rgb.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+* @func keyword2rgb
+* @desc Return an RGB color from a CSS keyword color
+* @param {StringKeyword} keyword
+* @return {ArrayRGB}
+* @example
+* keyword2rgb('red') // => [100, 0, 0]
+*/
+
+export default function keyword2rgb(keyword) {
+	const rgb255 = keywords[String(keyword).toLowerCase()];
+
+	return rgb255 ? rgb255.map(x => x * 100 / 255) : null;
+}
+
+const keywords = {
+	aliceblue: [240, 248, 255],
+	antiquewhite: [250, 235, 215],
+	aqua: [0, 255, 255],
+	aquamarine: [127, 255, 212],
+	azure: [240, 255, 255],
+	beige: [245, 245, 220],
+	bisque: [255, 228, 196],
+	black: [0, 0, 0],
+	blanchedalmond: [255, 235, 205],
+	blue: [0, 0, 255],
+	blueviolet: [138, 43, 226],
+	brown: [165, 42, 42],
+	burlywood: [222, 184, 135],
+	cadetblue: [95, 158, 160],
+	chartreuse: [127, 255, 0],
+	chocolate: [210, 105, 30],
+	coral: [255, 127, 80],
+	cornflowerblue: [100, 149, 237],
+	cornsilk: [255, 248, 220],
+	crimson: [220, 20, 60],
+	cyan: [0, 255, 255],
+	darkblue: [0, 0, 139],
+	darkcyan: [0, 139, 139],
+	darkgoldenrod: [184, 134, 11],
+	darkgray: [169, 169, 169],
+	darkgreen: [0, 100, 0],
+	darkgrey: [169, 169, 169],
+	darkkhaki: [189, 183, 107],
+	darkmagenta: [139, 0, 139],
+	darkolivegreen: [85, 107, 47],
+	darkorange: [255, 140, 0],
+	darkorchid: [153, 50, 204],
+	darkred: [139, 0, 0],
+	darksalmon: [233, 150, 122],
+	darkseagreen: [143, 188, 143],
+	darkslateblue: [72, 61, 139],
+	darkslategray: [47, 79, 79],
+	darkslategrey: [47, 79, 79],
+	darkturquoise: [0, 206, 209],
+	darkviolet: [148, 0, 211],
+	deeppink: [255, 20, 147],
+	deepskyblue: [0, 191, 255],
+	dimgray: [105, 105, 105],
+	dimgrey: [105, 105, 105],
+	dodgerblue: [30, 144, 255],
+	firebrick: [178, 34, 34],
+	floralwhite: [255, 250, 240],
+	forestgreen: [34, 139, 34],
+	fuchsia: [255, 0, 255],
+	gainsboro: [220, 220, 220],
+	ghostwhite: [248, 248, 255],
+	gold: [255, 215, 0],
+	goldenrod: [218, 165, 32],
+	gray: [128, 128, 128],
+	green: [0, 128, 0],
+	greenyellow: [173, 255, 47],
+	grey: [128, 128, 128],
+	honeydew: [240, 255, 240],
+	hotpink: [255, 105, 180],
+	indianred: [205, 92, 92],
+	indigo: [75, 0, 130],
+	ivory: [255, 255, 240],
+	khaki: [240, 230, 140],
+	lavender: [230, 230, 250],
+	lavenderblush: [255, 240, 245],
+	lawngreen: [124, 252, 0],
+	lemonchiffon: [255, 250, 205],
+	lightblue: [173, 216, 230],
+	lightcoral: [240, 128, 128],
+	lightcyan: [224, 255, 255],
+	lightgoldenrodyellow: [250, 250, 210],
+	lightgray: [211, 211, 211],
+	lightgreen: [144, 238, 144],
+	lightgrey: [211, 211, 211],
+	lightpink: [255, 182, 193],
+	lightsalmon: [255, 160, 122],
+	lightseagreen: [32, 178, 170],
+	lightskyblue: [135, 206, 250],
+	lightslategray: [119, 136, 153],
+	lightslategrey: [119, 136, 153],
+	lightsteelblue: [176, 196, 222],
+	lightyellow: [255, 255, 224],
+	lime: [0, 255, 0],
+	limegreen: [50, 205, 50],
+	linen: [250, 240, 230],
+	magenta: [255, 0, 255],
+	maroon: [128, 0, 0],
+	mediumaquamarine: [102, 205, 170],
+	mediumblue: [0, 0, 205],
+	mediumorchid: [186, 85, 211],
+	mediumpurple: [147, 112, 219],
+	mediumseagreen: [60, 179, 113],
+	mediumslateblue: [123, 104, 238],
+	mediumspringgreen: [0, 250, 154],
+	mediumturquoise: [72, 209, 204],
+	mediumvioletred: [199, 21, 133],
+	midnightblue: [25, 25, 112],
+	mintcream: [245, 255, 250],
+	mistyrose: [255, 228, 225],
+	moccasin: [255, 228, 181],
+	navajowhite: [255, 222, 173],
+	navy: [0, 0, 128],
+	oldlace: [253, 245, 230],
+	olive: [128, 128, 0],
+	olivedrab: [107, 142, 35],
+	orange: [255, 165, 0],
+	orangered: [255, 69, 0],
+	orchid: [218, 112, 214],
+	palegoldenrod: [238, 232, 170],
+	palegreen: [152, 251, 152],
+	paleturquoise: [175, 238, 238],
+	palevioletred: [219, 112, 147],
+	papayawhip: [255, 239, 213],
+	peachpuff: [255, 218, 185],
+	peru: [205, 133, 63],
+	pink: [255, 192, 203],
+	plum: [221, 160, 221],
+	powderblue: [176, 224, 230],
+	purple: [128, 0, 128],
+	rebeccapurple: [102, 51, 153],
+	red: [255, 0, 0],
+	rosybrown: [188, 143, 143],
+	royalblue: [65, 105, 225],
+	saddlebrown: [139, 69, 19],
+	salmon: [250, 128, 114],
+	sandybrown: [244, 164, 96],
+	seagreen: [46, 139, 87],
+	seashell: [255, 245, 238],
+	sienna: [160, 82, 45],
+	silver: [192, 192, 192],
+	skyblue: [135, 206, 235],
+	slateblue: [106, 90, 205],
+	slategray: [112, 128, 144],
+	slategrey: [112, 128, 144],
+	snow: [255, 250, 250],
+	springgreen: [0, 255, 127],
+	steelblue: [70, 130, 180],
+	tan: [210, 180, 140],
+	teal: [0, 128, 128],
+	thistle: [216, 191, 216],
+	tomato: [255, 99, 71],
+	transparent: [0, 0, 0],
+	turquoise: [64, 224, 208],
+	violet: [238, 130, 238],
+	wheat: [245, 222, 179],
+	white: [255, 255, 255],
+	whitesmoke: [245, 245, 245],
+	yellow: [255, 255, 0],
+	yellowgreen: [154, 205, 50]
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+    <script src="scripts/custom.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    
+</body>
+</html>

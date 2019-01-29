@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>lab-xyz.js - Convert Colors</title>
+    
+    <meta name="description" content="A tool for transforming colors with JavaScript" />
+    
+    
+    
+    <meta property="og:title" content="Convert Colors"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://jonathantneal.github.io/node-logo.svg"/>
+    <meta property="og:site_name" content="Convert Colors"/>
+    <meta property="og:url" content="https://jonathantneal.github.io/convert-colors"/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/jonathantneal/convert-colors" >GitHub</a></h2><h2><a href="https://gitter.im/postcss" >Support</a></h2><h3>Global</h3><ul><li><a href="global.html#hex2ciede">hex2ciede</a></li><li><a href="global.html#hex2contrast">hex2contrast</a></li><li><a href="global.html#hex2hsl">hex2hsl</a></li><li><a href="global.html#hex2hsv">hex2hsv</a></li><li><a href="global.html#hex2hwb">hex2hwb</a></li><li><a href="global.html#hex2lab">hex2lab</a></li><li><a href="global.html#hex2lch">hex2lch</a></li><li><a href="global.html#hex2rgb">hex2rgb</a></li><li><a href="global.html#hex2xyz">hex2xyz</a></li><li><a href="global.html#hsl2ciede">hsl2ciede</a></li><li><a href="global.html#hsl2contrast">hsl2contrast</a></li><li><a href="global.html#hsl2hex">hsl2hex</a></li><li><a href="global.html#hsl2hsv">hsl2hsv</a></li><li><a href="global.html#hsl2hwb">hsl2hwb</a></li><li><a href="global.html#hsl2lab">hsl2lab</a></li><li><a href="global.html#hsl2lch">hsl2lch</a></li><li><a href="global.html#hsl2rgb">hsl2rgb</a></li><li><a href="global.html#hsl2xyz">hsl2xyz</a></li><li><a href="global.html#hsv2ciede">hsv2ciede</a></li><li><a href="global.html#hsv2contrast">hsv2contrast</a></li><li><a href="global.html#hsv2hex">hsv2hex</a></li><li><a href="global.html#hsv2hsl">hsv2hsl</a></li><li><a href="global.html#hsv2hwb">hsv2hwb</a></li><li><a href="global.html#hsv2lab">hsv2lab</a></li><li><a href="global.html#hsv2lch">hsv2lch</a></li><li><a href="global.html#hsv2rgb">hsv2rgb</a></li><li><a href="global.html#hsv2xyz">hsv2xyz</a></li><li><a href="global.html#hwb2ciede">hwb2ciede</a></li><li><a href="global.html#hwb2contrast">hwb2contrast</a></li><li><a href="global.html#hwb2hex">hwb2hex</a></li><li><a href="global.html#hwb2hsl">hwb2hsl</a></li><li><a href="global.html#hwb2hsv">hwb2hsv</a></li><li><a href="global.html#hwb2lab">hwb2lab</a></li><li><a href="global.html#hwb2lch">hwb2lch</a></li><li><a href="global.html#hwb2rgb">hwb2rgb</a></li><li><a href="global.html#hwb2xyz">hwb2xyz</a></li><li><a href="global.html#keyword2ciede">keyword2ciede</a></li><li><a href="global.html#keyword2contrast">keyword2contrast</a></li><li><a href="global.html#keyword2hex">keyword2hex</a></li><li><a href="global.html#keyword2hsl">keyword2hsl</a></li><li><a href="global.html#keyword2hsv">keyword2hsv</a></li><li><a href="global.html#keyword2hwb">keyword2hwb</a></li><li><a href="global.html#keyword2lab">keyword2lab</a></li><li><a href="global.html#keyword2lch">keyword2lch</a></li><li><a href="global.html#keyword2rgb">keyword2rgb</a></li><li><a href="global.html#lab2ciede">lab2ciede</a></li><li><a href="global.html#lab2contrast">lab2contrast</a></li><li><a href="global.html#lab2hsl">lab2hsl</a></li><li><a href="global.html#lab2hsv">lab2hsv</a></li><li><a href="global.html#lab2hwb">lab2hwb</a></li><li><a href="global.html#lab2lch">lab2lch</a></li><li><a href="global.html#lab2rgb">lab2rgb</a></li><li><a href="global.html#lab2xyz">lab2xyz</a></li><li><a href="global.html#lch2ciede">lch2ciede</a></li><li><a href="global.html#lch2contrast">lch2contrast</a></li><li><a href="global.html#lch2hex">lch2hex</a></li><li><a href="global.html#lch2hsl">lch2hsl</a></li><li><a href="global.html#lch2hsv">lch2hsv</a></li><li><a href="global.html#lch2hwb">lch2hwb</a></li><li><a href="global.html#lch2lab">lch2lab</a></li><li><a href="global.html#lch2rgb">lch2rgb</a></li><li><a href="global.html#lch2xyz">lch2xyz</a></li><li><a href="global.html#rgb2ciede">rgb2ciede</a></li><li><a href="global.html#rgb2contrast">rgb2contrast</a></li><li><a href="global.html#rgb2hex">rgb2hex</a></li><li><a href="global.html#rgb2hsl">rgb2hsl</a></li><li><a href="global.html#rgb2hsv">rgb2hsv</a></li><li><a href="global.html#rgb2hwb">rgb2hwb</a></li><li><a href="global.html#rgb2lab">rgb2lab</a></li><li><a href="global.html#rgb2lch">rgb2lch</a></li><li><a href="global.html#rgb2xyz">rgb2xyz</a></li><li><a href="global.html#xyz2ciede">xyz2ciede</a></li><li><a href="global.html#xyz2contrast">xyz2contrast</a></li><li><a href="global.html#xyz2hex">xyz2hex</a></li><li><a href="global.html#xyz2hsl">xyz2hsl</a></li><li><a href="global.html#xyz2hsv">xyz2hsv</a></li><li><a href="global.html#xyz2hwb">xyz2hwb</a></li><li><a href="global.html#xyz2lab">xyz2lab</a></li><li><a href="global.html#xyz2lch">xyz2lch</a></li><li><a href="global.html#xyz2rgb">xyz2rgb</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lab-xyz.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { cbrt, epsilon, kappa, pow, wd50X, wd50Y, wd50Z, matrix } from './util';
+
+/**
+* @func lab2xyz
+* @desc Return an XYZ color from a LAB color
+* @param {Number} l - CIE Lightness
+* @param {Number} a - Red/Green Coordinate
+* @param {Number} b - Yellow/Blue Coordinate
+* @return {ArrayXYZ}
+* @example
+* lab2xyz(54.29, 80.82, 69.88) // => 41.25, 21.27, 1.93
+* @link https://www.w3.org/TR/css-color-4/#rgb-to-lab
+* @link https://www.w3.org/TR/css-color-4/#color-conversion-code
+* @link https://www.easyrgb.com/en/math.php
+*/
+
+export function lab2xyz(labL, labA, labB) {
+	// compute f, starting with the luminance-related term
+	const f2 = (labL + 16) / 116;
+	const f1 = labA / 500 + f2;
+	const f3 = f2 - labB / 200;
+
+	// compute pre-scaled XYZ
+	const [ initX, initY, initZ ] = [
+		pow(f1, 3) > epsilon   ? pow(f1, 3)                : (116 * f1 - 16) / kappa,
+		labL > kappa * epsilon ? pow((labL + 16) / 116, 3) : labL / kappa,
+		pow(f3, 3) > epsilon   ? pow(f3, 3)                : (116 * f3 - 16) / kappa
+	];
+
+	const [ xyzX, xyzY, xyzZ ] = matrix(
+		// compute XYZ by scaling pre-scaled XYZ by reference white
+		[ initX * wd50X, initY * wd50Y, initZ * wd50Z ],
+		// calculate D65 XYZ from D50 XYZ
+		[
+			[ 0.9555766, -0.0230393,  0.0631636],
+			[-0.0282895,  1.0099416,  0.0210077],
+			[ 0.0122982, -0.0204830,  1.3299098]
+		]
+	);
+
+	return [ xyzX, xyzY, xyzZ ];
+}
+
+/**
+* @func xyz2lab
+* @desc Return an LAB color from a XYZ color
+* @param {Number} x - Chromaticity of X
+* @param {Number} y - Chromaticity of Y
+* @param {Number} z - Chromaticity of Z
+* @return {ArrayLAB}
+* @example
+* xyz2lab(41.25, 21.27, 1.93) // => [54.29, 80.82, 69.88]
+* @link https://www.w3.org/TR/css-color-4/#rgb-to-lab
+* @link https://www.w3.org/TR/css-color-4/#color-conversion-code
+* @link https://www.easyrgb.com/en/math.php
+*/
+
+export function xyz2lab(xyzX, xyzY, xyzZ) {
+	// calculate D50 XYZ from D65 XYZ
+	const [ d50X, d50Y, d50Z ] = matrix([ xyzX, xyzY, xyzZ ], [
+		[ 1.0478112,  0.0228866, -0.0501270],
+		[ 0.0295424,  0.9904844, -0.0170491],
+		[-0.0092345,  0.0150436,  0.7521316]
+	]);
+
+	// calculate f
+	const [ f1, f2, f3 ] = [
+		d50X / wd50X,
+		d50Y / wd50Y,
+		d50Z / wd50Z
+	].map(
+		value => value > epsilon ? cbrt(value) : (kappa * value + 16) / 116
+	);
+
+	const [ labL, labA, labB ] = [
+		116 * f2 - 16,
+		500 * (f1 - f2),
+		200 * (f2 - f3)
+	];
+
+	return [ labL, labA, labB ];
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+    <script src="scripts/custom.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    
+</body>
+</html>
