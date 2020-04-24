@@ -6,6 +6,7 @@ import { hsl2hsv, hsv2hsl } from './hsl-hsv';
 import { hwb2hsv, hsv2hwb } from './hwb-hsv';
 import { lab2xyz, xyz2lab } from './lab-xyz';
 import { lab2lch, lch2lab } from './lab-lch';
+import { xyz2p3 } from './xyz-p3';
 import rgb2contrast from './rgb-contrast';
 import { hex2rgb, rgb2hex } from './hex-rgb';
 import keyword2rgb from './keyword-rgb';
@@ -1130,7 +1131,9 @@ export {
 	xyz2hwb,
 	xyz2lab,
 	xyz2lch,
-	xyz2rgb
+	xyz2rgb,
+
+	xyz2p3
 };
 
 /**
