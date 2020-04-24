@@ -1,8 +1,8 @@
 # Convert Colors [<img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Convert Colors" width="90" height="90" align="right">][Convert Colors]
 
-[![NPM Version][npm-img]][npm-url]
-[![Linux Build Status][cli-img]][cli-url]
-[![Windows Build Status][win-img]][win-url]
+[<img alt="npm version" src="https://img.shields.io/npm/v/@csstools/convert-colors.svg" height="20">][npm-url]
+[<img alt="build status" src="https://img.shields.io/travis/jonathantneal/convert-colors/master.svg" height="20">][cli-url]
+[<img alt="support chat" src="https://img.shields.io/badge/support-chat-blue.svg" height="20">][git-url]
 
 [Convert Colors] converts colors between RGB, HEX, HSL, HWB, LAB, LCH, and more.
 
@@ -39,11 +39,8 @@ and returning an array of that same color in another color space.
 
 [Documentation](https://jonathantneal.github.io/convert-colors/)
 
-[npm-url]: https://www.npmjs.com/package/@csstools/convert-colors
-[npm-img]: https://img.shields.io/npm/v/@csstools/convert-colors.svg
 [cli-url]: https://travis-ci.org/jonathantneal/convert-colors
-[cli-img]: https://img.shields.io/travis/jonathantneal/convert-colors.svg
-[win-url]: https://ci.appveyor.com/project/jonathantneal/convert-colors
-[win-img]: https://img.shields.io/appveyor/ci/jonathantneal/convert-colors.svg
+[git-url]: https://gitter.im/postcss/postcss
+[npm-url]: https://www.npmjs.com/package/@csstools/convert-colors
 
 [Convert Colors]: https://github.com/jonathantneal/convert-colors
