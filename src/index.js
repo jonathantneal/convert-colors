@@ -669,14 +669,14 @@ function hwb2hex(hwbH, hwbW, hwbB) {
 }
 
 /**
-* @func lch2hex
+* @func lab2hex
 * @desc Return a Hex color from a CIE LAB color
 * @param {Number} l - CIE Lightness
 * @param {Number} a - Red/Green Coordinate
 * @param {Number} b - Yellow/Blue Coordinate
 * @return {StringHex}
 * @example
-* lch2hex(54.29, 80.82, 69.88) // => "#f00"
+* lab2hex(54.29, 80.82, 69.88) // => "#f00"
 */
 
 function lab2hex(labL, labA, labB) {
