@@ -12,16 +12,13 @@ import convert from '@csstools/convert-colors';
 convert.rgb2hsl(100, 100, 100); // [ 0, 0, 100 ]
 convert.rgb2hwb(100, 100, 100); // [ 0, 100, 0 ]
 
-convert.hsl2rgb(0, 0, 100); // [ 0, 100, 0 ]
+convert.hsl2rgb(0, 0, 100); // [ 100, 100, 100 ]
 convert.hsl2hwb(0, 0, 100); // [ 0, 100, 0 ]
 
-convert.hwb2rgb(0, 100, 0); // [ 0, 0, 100 ]
+convert.hwb2rgb(0, 100, 0); // [ 100, 100, 100 ]
 convert.hwb2hsl(0, 100, 0); // [ 0, 0, 100 ]
 
-convert.rgb2hue(0, 0, 100); // 240
-
 convert.rgb2contrast([100, 100, 100], [0, 0, 0]); // 21
-convert.rgb2ciede2000([100, 100, 100], [0, 0, 0]); // 100
 ```
 
 ## Usage
